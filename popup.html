@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Timer</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+    <div class="container">
+        <div id="progress-container" class="progress-container">
+            <div id="progress-bar" class="progress-bar">
+                <span id="progress-text" class="progress-text"></span>
+            </div>
+        </div>
+        
+        <div class="settings-panel">
+            <button id="settings-toggle" class="settings-button">⚙️</button>
+        </div>
+
+        <div id="settings-modal" class="settings-modal hidden">
+            <h3>Timer Settings</h3>
+            <div class="setting-group">
+                <h4>Time Period</h4>
+                <div class="date-inputs">
+                    <div class="date-field">
+                        <label>Start:</label>
+                        <input type="date" id="start-date" class="minimal-input">
+                    </div>
+                    <div class="date-field">
+                        <label>End:</label>
+                        <input type="date" id="target-date" class="minimal-input">
+                    </div>
+                    <div class="days-input">
+                        <label>Or set days:</label>
+                        <input type="number" id="days-input" class="minimal-input" placeholder="Enter number of days">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="setting-group">
+                <h4>Appearance</h4>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="auto-hide">
+                        Auto-hide after 5 seconds
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>Theme:</label>
+                    <select id="theme-select" class="minimal-select">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="shortcut-info">
+                Toggle visibility: Ctrl+Shift+T
+            </div>
+        </div>
+    </div>
+    <script src="js/popup.js"></script>
+</body>
+</html> 

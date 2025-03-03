@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Minimal Timer",
+  "version": "1.0",
+  "description": "A minimalistic countdown and count-up timer with a sleek progress bar",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle-visibility": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Toggle timer visibility"
+    }
+  }
+} 
